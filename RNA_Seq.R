@@ -64,21 +64,21 @@ library(Rqc)
 
 #Downloading Genome file----
 #Reference genome (source: ensembl genome browser)
-#url<-"ftp://www.ensembl.org/pub/release-96/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna_sm.toplevel.fa.gz"
-#destination<-"Saccharomyces_cerevisiae.R64-1-1.dna_sm.toplevel.fa.gz"
-#download.file(url,destination)
-#gunzip(destination)
+url<-"ftp://www.ensembl.org/pub/release-96/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna_sm.toplevel.fa.gz"
+destination<-"Saccharomyces_cerevisiae.R64-1-1.dna_sm.toplevel.fa.gz"
+download.file(url,destination)
+gunzip(destination)
 
 #Downloading GTF file----
 #GTF File containing indexes (source:ensembl genome browser)
-#url<-"ftp://www.ensembl.org/pub/release-96/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.96.gtf.gz"
-#destination<-"Saccharomyces_cerevisiae.R64-1-1.96.gtf.gz"
-#download.file(url,destination)
-#gunzip(destination)
+url<-"ftp://www.ensembl.org/pub/release-96/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.96.gtf.gz"
+destination<-"Saccharomyces_cerevisiae.R64-1-1.96.gtf.gz"
+download.file(url,destination)
+gunzip(destination)
 
 
-
-#rqc(path = "C://Users//Jehad Yasin//OneDrive//Desktop//Cancer Genomics", pattern = ".fastq.gz")
+#Run quality control, if failed, use FASTQC Java software
+rqc(path = "C://Users//Jehad Yasin//OneDrive//Desktop//Cancer Genomics", pattern = ".fastq.gz")
 
 #Building Index----
 #saving index to a file named "Sc_full_index_rsubread"
