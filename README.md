@@ -4,7 +4,7 @@ This is an R script for bulk RNA-Seq analysis.
 
 The first section involves analyzing RNA-Seq data from two samples of yeast cells subjected to stress. 
 
-Links to FASTQ files:
+Links to FASTQ files (Single-End):
   - https://trace.ncbi.nlm.nih.gov/Traces/index.html?run=SRR5924196
   - https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR5924198&display=download
   
